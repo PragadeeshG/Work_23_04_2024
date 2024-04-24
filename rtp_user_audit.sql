@@ -1,0 +1,15 @@
+create table if not exists rtp_user_audit(
+user_id integer not null,
+upload_time varchar(255) null,
+upload_file_name varchar(255) null,
+upload_duration varchar(255) null,
+upload_size integer null,
+remarks varchar(255) null,
+data_hashing_done varchar(255) null,
+hashing_algorithm varchar(255) null,
+upload_host varchar(255) null,
+intented_usage varchar(255) null,
+creation_date varchar(255) null,
+entity_state varchar(255) null,
+modified_date varchar(255) null,
+constraint rtp_user_audit_pk primary key(user_id));
